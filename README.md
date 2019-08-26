@@ -85,8 +85,11 @@ access.
 In the version of the program handed out, the user can partially refill a ink tank by hitting the
 appropriate key (‘r’, ‘g’, or ‘b’). We would like to automatize the process and instead have
 threads in charge of refilling the tanks. Such threads would run an infinite loop of
+
 • Sleep for a while (simulates time required to “produce” ink;
+
 • Gain access to the appropriate ink tank;
+
 • Add ink (don’t overfill);
 
 If you look carefully at the code of main.c, there are variables and functions already defined that
